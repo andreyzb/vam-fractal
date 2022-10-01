@@ -92,7 +92,8 @@ function styles() {
 // Fonts
 function fonts() {
   return gulp.src(`${paths.src}/assets/fonts/**/*`)
-    .pipe(gulp.dest(`${paths.tmp}/assets/fonts`));
+    .pipe(gulp.dest(`${paths.tmp}/assets/fonts`))
+    .pipe(gulp.dest(`${paths.dist}/fonts`));
 }
 
 
